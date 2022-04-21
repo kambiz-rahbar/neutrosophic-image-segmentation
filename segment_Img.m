@@ -1,6 +1,3 @@
-% New neutrosophic approach to image segmentation, Pattern Recognition, 42 (2009) 587-595
-% Implemented by kambiz rahbar, 2022.
-
 function [Img] = segment_Img(Img)
     idx = kmeans(Img(:),2);
     idx = reshape(idx, size(Img));
