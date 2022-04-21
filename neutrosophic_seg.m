@@ -52,6 +52,7 @@ function [segT, T, I, F] = neutrosophic_seg(Img, dispRes, m, alpha, beta, gamma,
         EntTrack(k) = NS_Ent_new;
     
         c = abs(NS_Ent_new - NS_Ent) / NS_Ent;
+        NS_Ent = NS_Ent_new;
         if  c < gamma
             EntTrack(k:end) = [];
             break;
